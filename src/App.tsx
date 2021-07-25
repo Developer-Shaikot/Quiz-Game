@@ -48,7 +48,7 @@ function App() {
       //user answer
       const answer = e.currentTarget.value;
       //check answer against correct answer
-      const correct = questions[number].correct_answers === answer;
+      const correct = questions[number].correct_answer === answer;
       //add answer if answer is correct
       if (correct) setScore(prev => prev + 1);
       //save answer in the array for user answers
@@ -56,7 +56,7 @@ function App() {
         question: questions[number].question,
         answer,
         correct,
-        correctAnswer: questions[number].correct_answers,
+        correctAnswer: questions[number].correct_answer,
 
       };
       setUserAnswer((prev) => [...prev, answerObject]);
