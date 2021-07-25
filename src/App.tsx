@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { fetchQuizQuestions } from './API';
 
 import QuestionCard from './Components/QuestionCard';
@@ -101,8 +101,11 @@ function App() {
           Next Question
         </button>
       ) : null}
-    
+      
     </Warper>
+    <br />
+      <footer className="pra text-center mt-3 pt-3 mb-3 ml-5 justify-content-end text-white">@Akash's QUIZ GAME {(new Date()).getFullYear()} Copyright All Rights Reserved</footer>
+      <br />
     </>
   );
 }
